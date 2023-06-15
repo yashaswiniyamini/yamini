@@ -1,0 +1,23 @@
+#heading1{
+    color: chocolate;
+}
+#heading2{
+    color:royalblue ;
+}
+#heading3{
+    color: rgb(105, 187, 196);
+}
+    
+
+
+p1 {
+    color: rgb(244, 16, 183);
+}
+button {
+    background-color: rgb(239, 245, 130);
+    color: rgb(228, 0, 57);
+    padding: 10px;
+    border-radius: 35px;
+    border-color: rgb(239, 64, 70);
+    margin: 10px
+}

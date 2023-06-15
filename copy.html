@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border Loading Animaton</title>
+    <link rel="stylesheet" href="copy.css" />
+  </head>
+
+  <body>
+    <div class="container active">
+      <span class="overlay egg" id="percent" >SUBMIT</span>
+    </div>
+
+    <!-- <script>
+      const container = document.querySelector(".container"),
+        percent = document.querySelector("#percent");
+
+      let perVal = 0;
+
+      let increament = setInterval(() => {
+        perVal++;
+        percent.textContent = `${perVal}%`;
+
+        if (perVal == 100) {
+          clearInterval(increament);
+          container.classList.remove("active");
+        }
+      }, 100);
+    </script> -->
+  </body>
+</html>
+<!-- 0% {
+  background-image: conic-gradient(green,green,green);
+  transform: rotate(0deg);
+}
+75% {
+  background-image: conic-gradient(yellow, yellow, yellow);
+  transform: rotate(180deg);
+}
+100%{
+  background-image: conic-gradient(red, red, red);
+  transform: rotate(360deg);
+} -->

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Designing </title>
+</head>
+<body>
+    <div class="button">
+        Login
+    </div>
+</body>
+</html>
+
+
+
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: rgb(2, 2, 2);
+    }
+    .button {
+  font-family:Arial, Helvetica, sans-serif;
+  margin-top: 20%;
+  font-size: 20px;
+  color:white;
+  width:200px;
+  height:50px;
+  background:green;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 1s linear;
+  animation: colorAnimation 6s infinite;
+}
+.button:before {
+  content: "";
+  position: absolute;
+  left:0;
+  top:0;
+  width: 0;
+  height: 0;
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  animation: border-top-right 6s infinite;
+}
+@keyframes border-top-right {
+  0%    {width:0px;   height:0px;}
+  25%   {width:200px; height:0px;}
+  50%   {width:200px; height:48px;}
+  100%  {width:200px; height:48px;}
+}
+.button:after {
+  content: "";
+  position: absolute;
+  right:0;
+  bottom:0;
+  width: 0;
+  height: 0;
+  border-bottom:2px solid white;
+  border-left: 2px solid white;
+  animation: border-bottom-left 6s infinite;
+}
+
+@keyframes border-bottom-left {
+    0%    {width:0px;   height:0px; opacity: 0;}
+    50%   {width:0px;   height:0px; opacity: 0;}
+    50.1% {width:0px;   height:0px; opacity: 1;}
+    75%   {width:200px; height:0px; opacity: 1;}
+    100%  {width:200px; height:48px;opacity: 1;}
+}
+
+.button:hover{
+    animation-play-state: paused;
+}
+@keyframes colorAnimation {
+  0%, 30% {
+    background-color: green;
+  }
+  30.01%, 60% {
+    background-color: yellow;
+  }
+  60.01%, 90% {
+    background-color: red;
+  }
+}
+
+.button:hover  {
+  animation-play-state: paused;
+  transition: background-color 0.3s ease;
+}
+.button:hover:after, 
+.button:hover::before{
+    animation-play-state: paused;
+}
+</style>

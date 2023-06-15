@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+}
+header{
+    border: 3px groove burlywood;
+    height: 20px;
+    padding-bottom: 80px;
+    border-radius: 8px;
+    /*margin: 40px; */
+    border-color: black;
+}
+ul li{
+    border: 0;
+    float: left;
+    margin: 15px;
+
+}
+ul li a{
+    color: aliceblue;
+}
+ul li a:hover{
+    color: grey;
+}
+h1{
+    /*border: 2px solid red; */
+    border-radius: 30px;
+    padding: 5px;
+    margin: 40px 1275px 20px 0px;
+}
+#search{
+    float: right;
+    margin: 10px;
+}
+.box{
+    /* border: 4px solid green; */
+    /* msrgin-top: 10px; */
+    padding: 0px 30px 40px 50px;
+    /*/padding: top,right,bottom,left*/
+    border-radius: 20px;
+    margin: 0px 30px;
+
+}
+body{
+    color:aliceblue;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+header{
+    background: url("./nature.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.btn{
+    color: blue;
+    text-decoration: none;
+    margin: 10px;
+}
+.link{
+    color: tomato;
+}
+.btn:hover{
+    color: rgb(9,7,7);
+    background-color: yellow;
+}
+.link:hover{
+    color: rgb(229,23,23);
+}

@@ -1,0 +1,33 @@
+ul li{
+    border: 0;
+    float :left;
+    margin: 10px;
+}
+button{
+    position:absolute;
+    width: 100px;
+    padding: 15px;
+    text-align: center;
+    margin: 20px solid #19f53a;
+    font-weight: bold;
+    border: 2px solid#19f53a ;
+    border-radius: 35px;
+    background:transparent;
+    color: #f40a0a;
+    cursor: pointer;
+    overflow:hidden;
+    text-transform: uppercase;
+}
+span{
+    background: #19f53a;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
